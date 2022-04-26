@@ -13,9 +13,15 @@ function BinarioADecimal(num) {
 
 }
 
-function DecimalABinario(num) {
-  // tu codigo aca
 
+function DecimalABinario(num) {
+  var bin = [];
+  while(num > 1 ){
+  bin.push(Math.floor(num%2));
+  num =  num/2;
+  }
+  bin = bin.reverse().join('');
+  return bin
 }
 
 
